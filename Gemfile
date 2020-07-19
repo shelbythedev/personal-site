@@ -60,3 +60,6 @@ gem 'redcarpet'
 
 # CodeRay for blog snippet syntax highlighting
 gem 'coderay'
+
+# Trestle for admin portal
+gem 'trestle'
