@@ -10,6 +10,63 @@
   </head>
 
   <body>
-    <%= yield %>
+      <%# navbar %>
+      <div class="navbar navbar-expand-md navbar-dark bg-dark">
+        <%# main logo %>
+        <a class="navbar-brand" href="#">Shelby Solomon</a>
+
+        <%# nav menu %>
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link">About</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link">Software Engineering</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link">Professional Services</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link">Amateur Radio</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <%# navbar end %>
+
+      <%# DYNAMIC CONTENT GOES HERE %>
+      <%= yield %>
+
+      <%# footer %>
+      <div class="footer container-fluid">
+        <div class="row">
+          <div class="col">
+          
+          </div>
+
+          <div class="col">
+          
+          </div>
+
+          <div class="col">
+          
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <%= link_to "Terms & Conditions", "terms-and-conditions" %>
+            <%= link_to "Privacy Policy", "privacy-policy" %>
+          </div>
+
+          <div class="col text-right">
+            <h6>&copy;<%= Time.now.year %> Shelby Solomon</h6>
+          </div>
+        </div>
+      </div>
   </body>
 </html>
