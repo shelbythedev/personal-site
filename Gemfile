@@ -60,3 +60,7 @@ gem 'redcarpet'
 
 # CodeRay for blog snippet syntax highlighting
 gem 'coderay'
+
+# Bootstrap for basic UI
+gem 'bootstrap', '~> 4.5.0'
+gem 'jquery-rails'
